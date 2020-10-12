@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+  <head>
+     <title>My Peer Graded Assignment</title>
+     <link rel="stylesheet" type="text/css" href="aaaa.css"> 
+     <script>
+     function checkname()
+     {
+       if (name.value == "")
+        {
+          alert("Please enter your name");
+          return false;
+        }        
+     }
+  
+     function checkaddress()
+     { 
+        if(address.value=="")
+        {
+           alert("Please enter the address");
+           return false;
+        }
+     }</script>
+   </head>
+
+  <body>
+     <H1> THIS IS THE ENTRANCE EXAM APPLICATION FORM</H1>
+     <BR>
+       <p id="para"> Hey, this is the application form. I have choosen it because i wanted to make something different</p>
+     <BR>
+     <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.toppr.com%2Fbytes%2Faiims-application-form%2F&psig=AOvVaw01yXEm03n112VDLgdUf9pY&ust=1601675133272000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOD5jvyulOwCFQAAAAAdAAAAABAI"/>
+     <BR>
+     <form>
+        Name: <br>
+        <input type="text" name="Name"><br>
+        Father Name: <br>
+        <input type="text" name="Father's name"><br>
+        Address: <br>
+        <input type="text" name="Address"><br>
+        Password: <br>
+        <input type="text" name="Password"><br>
+        Phone Number: <br>
+        <input type="text" name="Number"><br>
+        <input type="radio" name="COURSE" value="BTech" checked> BTech<br>
+        <input type="radio" name="COURSE" value="BCA" checked> BCA<br>
+        <input type="radio" name="COURSE" value="BBA" checked> BBA<br>
+        Field1<input id="field1" type="text" onblur="checkname();"/><span id="message1"></span><br>
+        Field2<input id="field2" type="text" onblur="checkaddress();"/><span id="message2"></span><br>
+        <input type="submit" value="Submit">
+      </form>
+  </body>
+</html>
